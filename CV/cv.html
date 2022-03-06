@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    <script src="cv.js"></script>
+    <script src="students.js"></script>
+    <link rel="stylesheet" href="cv.css">
+
+</head>
+
+<body>
+    <div id="insertstudentss">
+        <!--Writing down the requested infos and text areas-->
+        <label>Name:</label> <input type="text" id="name"><br>
+        <label>Surname:</label> <input type="text" id="surname"><br>
+        <label>Date of Birt:</label> <input type="text" id="dateofbirth"><br>
+        <label>Education:</label> <input type="text" id="education"><br>
+        <label>Professional:</label> <input type="text" id="professional"><br>
+        <label>Involved Project:</label> <input type="text" id="ınvolvedproject"><br>
+        <button id="insertbtn">Submit</button>
+    </div>
+
+    <div class="student">
+
+        <!--Making tables to show the informations that user write-->
+        <button id="refreshtable">Refresh the Table</button>
+        <table id="studenttable">
+            <th>Name</th>
+            <th>Surname</th>
+            <th>DateofBirth</th>
+            <th>Education</th>
+            <th>Professional</th>
+            <th>InvolvedProject</th>
+
+
+        </table>
+    </div>
+
+    <div>
+        <!--Creating text are for the user(if they want to get more information about the page)-->
+        <h2>Get more information with this website</h2>
+        <label id="iname"> Name</label> <input type="text" id="inameid"><br>
+        <label id="iemailadress"> Email Adress</label> <input type="text" id="emailadressid"><br>
+        <textarea name="textarea" id="textarea" cols="30" rows="5" placeholder="Please write what you want to learn more?"></textarea> <br>
+        <button id="sendbtn">Send</button>
+    </div>
+
+</body>
+
+</html>
